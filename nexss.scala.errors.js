@@ -1,4 +1,3 @@
 module.exports = {
-  "ModuleNotFoundError: No module named '(.*?)'":
-    "nexss install py <module> OR pip3 install <module>"
+  "error here '(.*?)'": "nexss install java <module> OR sbt install <module>"
 };
