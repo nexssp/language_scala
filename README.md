@@ -1,5 +1,7 @@
 # Scala implementation for Nexss Programmer
 
+To Install Nexss Programmer please go to [Nexss Programmer CLI](https://github.com/nexssp/cli#readme) for more information.
+
 **Nexss Programmer** is using **Ammonite** to compile and run Scala Scripts.
 More about ammonite: <https://ammonite.io> and ammonite's author blog <http://www.lihaoyi.com>
 
@@ -20,7 +22,7 @@ nexss myfile.scala
 import $ivy.`com.atlassian.commonmark:commonmark:0.5.1`
 ```
 
-is equal to 
+is equal to
 
 ```xml
 <dependency>
@@ -31,7 +33,5 @@ is equal to
 ```
 
 ## Interesting Links
-
-
 
 [Build Your Own Programming Lanugage with Scala (www.lihaoyi.com)](http://www.lihaoyi.com/post/BuildyourownProgrammingLanguagewithScala.html)
