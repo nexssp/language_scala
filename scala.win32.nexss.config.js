@@ -5,12 +5,12 @@ languageConfig.description =
 languageConfig.url = "https://www.scala-lang.org/";
 languageConfig.extensions = [".scala", ".sc"];
 languageConfig.builders = {};
-languageConfig.interactiveShell = "amm"
+languageConfig.interactiveShell = "amm";
 languageConfig.compilers = {
   amm: {
     install: "scoop install scala sbt ammonite",
     command: "amm",
-    args: "<file>", //args: "-s <file>",
+    args: "--no-remote-logging <file>", //args: "-s <file>",
     help: ``
   }
 };
