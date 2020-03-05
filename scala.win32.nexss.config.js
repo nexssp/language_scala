@@ -2,7 +2,10 @@ let languageConfig = Object.assign({}, require("../config.win32"));
 languageConfig.title = "Scala";
 languageConfig.description =
   "Scala combines object-oriented and functional programming in one concise, high-level language.";
-languageConfig.url = "https://www.scala-lang.org/";
+languageConfig.url = "https://www.scala-lang.org";
+languageConfig.founders = ["Martin Odersky"];
+languageConfig.developers = [""];
+languageConfig.years = ["2003"];
 languageConfig.extensions = [".scala", ".sc"];
 languageConfig.builders = {};
 languageConfig.interactiveShell = "amm";
