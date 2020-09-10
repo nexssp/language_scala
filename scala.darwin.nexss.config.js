@@ -1,18 +1,11 @@
-let languageConfig = Object.assign(
-  {},
-  require(`../config.${process.platform}`)
-);
-languageConfig.title = "Scala";
-languageConfig.description =
-  "Scala combines object-oriented and functional programming in one concise, high-level language.";
-languageConfig.url = "https://www.scala-lang.org";
-languageConfig.founders = ["Martin Odersky"];
-languageConfig.developers = [""];
-languageConfig.years = ["2003"];
-languageConfig.extensions = [".scala", ".sc"];
-languageConfig.builders = {};
-languageConfig.interactiveShell = "amm";
+let languageConfig = Object.assign({}, require("./scala.win32.nexss.config"));
 languageConfig.compilers = {
+  brew: {
+    install: "brew update && brew install scala",
+    command: "amm",
+    args: "--no-remote-logging <file>", //args: "-s <file>",
+    help: ``,
+  },
   amm: {
     install: "scoop install scala sbt ammonite",
     command: "amm",
@@ -20,7 +13,6 @@ languageConfig.compilers = {
     help: ``,
   },
 };
-languageConfig.errors = require("./nexss.scala.errors");
 languageConfig.languagePackageManagers = {
   sbt: {
     installation: "scoop install sbt",
